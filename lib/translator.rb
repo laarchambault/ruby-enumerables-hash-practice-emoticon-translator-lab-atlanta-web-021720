@@ -26,7 +26,7 @@ def get_english_meaning(file_path, emoticon)
   if meaning_list[:get_meaning][emoticon]
     answer = meaning_list[:get_meaning][emoticon]
   else
-    "Sorry, that meaning was not found"
+    "Sorry, that emoticon was not found"
   end
   answer
 end
