@@ -24,5 +24,9 @@ end
 def get_english_meaning(file_path, emoticon)
   meaning_list = load_library(file_path)
   if meaning_list[:get_meaning][emoticon]
-    answer = 
+    answer = meaning_list[:get_meaning][emoticon]
+  else
+    "Sorry, that meaning was not found"
+  end
+  answer
 end
