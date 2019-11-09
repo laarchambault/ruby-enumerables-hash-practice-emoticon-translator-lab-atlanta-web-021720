@@ -5,8 +5,8 @@ def load_library(file_path)
   meaning_list = {:get_meaning => {}, :get_emoticon => {}}
   
   yaml_list.each { |meaning, emoticons|
-  meaning_list[:get_meaning] = meaning 
-  meaning_list[:get_emoticon] = emoticons
+  meaning_list[:get_meaning][emoticons[1]] = meaning
+  meaning_list[:get_emoticon][emoticons[0]] = emoticons[1]
   }
   meaning_list
 end
