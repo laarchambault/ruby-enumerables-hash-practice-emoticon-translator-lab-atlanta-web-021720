@@ -2,11 +2,11 @@ require "yaml"
 
 def load_library(file_path)
   yaml_list = YAML.load_file(file_path)
-  meaning_list = {:get_meaning => [], :get_emoticon => []}
+  meaning_list = {:get_meaning => {}, :get_emoticon => {}}
   
   yaml_list.each { |meaning, emoticons|
-  meaning_list[:get_meaning] << meaning 
-  meaning_list[:get_emoticon] << emoticons
+  meaning_list[:get_meaning] = meaning 
+  meaning_list[:get_emoticon] = emoticons
   }
   meaning_list
 end
