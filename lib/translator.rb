@@ -8,6 +8,7 @@ def load_library(file_path)
   meaning_list[:get_meaning] << meaning 
   meaning_list[:get_emoticon] << emoticons
   }
+  meaning_list
 end
 
 def get_japanese_emoticon
